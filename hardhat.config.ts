@@ -47,11 +47,11 @@ const config: HardhatUserConfig = {
     },
     goerli: {
       url: process.env.GOERLI_URL,
-      accounts: [process.env.PRIVATE_KEY!],
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER!, process.env.PRIVATE_KEY_MULTISIG!, process.env.PRIVATE_KEY_TREASURY!],
     },
     mainnet: {
       url: process.env.MAINNET_URL,
-      accounts: [process.env.PRIVATE_KEY!],
+      accounts: [process.env.PRIVATE_KEY_DEPLOYER!],
     },
   },
   etherscan: {

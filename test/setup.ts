@@ -30,7 +30,19 @@ export type ContractsSetup = {
 }
 
 export const setupContracts = async (): Promise<ContractsSetup> => {
-    const [deployer, multisig, treasury, alice, bob] = await ethers.getSigners();
+    let [deployer, multisig, treasury, alice, bob] = await ethers.getSigners();
+
+    if (!multisig) {
+        multisig = deployer;
+    }
+
+    if (!treasury) {
+        treasury = multisig;
+    }
+
+    console.log("deployer: ", deployer.address);
+    console.log("multisig: ", multisig.address);
+    console.log("treasury: ", treasury.address);
 
     const want = IERC20__factory.connect(BALANCER_20WETH_80LIT, deployer);
     const oLIT = IERC20__factory.connect(OLIT, deployer);
