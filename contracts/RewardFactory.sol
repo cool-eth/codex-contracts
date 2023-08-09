@@ -7,7 +7,7 @@ import "./VirtualBalanceRewardPool.sol";
 
 contract RewardFactory is IRewardFactory {
     address public constant oLIT =
-        address(0x627fee87d0D9D2c55098A06ac805Db8F98B158Aa); // oLIT
+        address(0x63390fB9257AaBF54fbB9aCCDE3b927Edd2fB4a2); // oLIT
 
     address public operator;
     mapping(address => bool) private rewardAccess;

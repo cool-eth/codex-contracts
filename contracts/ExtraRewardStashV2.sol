@@ -14,7 +14,7 @@ contract ExtraRewardStashV2 {
     using SafeMath for uint256;
 
     address public constant oLIT =
-        address(0x627fee87d0D9D2c55098A06ac805Db8F98B158Aa); // oLIT
+        address(0x63390fB9257AaBF54fbB9aCCDE3b927Edd2fB4a2); // oLIT
     uint256 private constant maxRewards = 8;
     uint256 private constant WEEK = 7 * 86400;
 

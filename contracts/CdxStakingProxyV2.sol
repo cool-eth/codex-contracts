@@ -33,7 +33,7 @@ contract CdxStakingProxyV2 {
 
     //tokens
     address public constant want =
-        address(0x9232a548DD9E81BaC65500b5e0d918F8Ba93675C); // Balancer 20WETH/80LIT
+        address(0xF3a605DA753e9dE545841de10EA8bFfBd1Da9C75); // Balancer 20WETH/80LIT
     address public immutable cdx;
     address public immutable cdxLit;
 

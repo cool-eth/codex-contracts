@@ -15,9 +15,9 @@ contract LITDepositor {
     using Address for address;
 
     address public constant want =
-        address(0x9232a548DD9E81BaC65500b5e0d918F8Ba93675C); // Balancer 20WETH/80LIT
+        address(0xF3a605DA753e9dE545841de10EA8bFfBd1Da9C75); // Balancer 20WETH/80LIT
     address public constant escrow =
-        address(0xf17d23136B4FeAd139f54fB766c8795faae09660); // veLIT
+        address(0xdcEBc9195fE9b8867fd017440ab9516406f475d6); // veLIT
     uint256 private constant MAXTIME = 4 * 364 * 86400;
     uint256 private constant WEEK = 7 * 86400;
 

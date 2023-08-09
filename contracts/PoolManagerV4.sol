@@ -16,7 +16,7 @@ Changes:
 
 contract PoolManagerV4 {
     address public constant gaugeController =
-        address(0x901c8aA6A61f74aC95E7f397E22A0Ac7c1242218);
+        address(0xFe16CC67B62b10119BC03E7E7Bf2983f868f8CE5);
     address public immutable pools;
 
     address public operator;

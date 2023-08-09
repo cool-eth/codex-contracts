@@ -14,16 +14,16 @@ contract BunniVoterProxy {
     using Address for address;
 
     address public constant mintr =
-        address(0xF087521Ffca0Fa8A43F5C445773aB37C5f574DA0); // oLIT minter
+        address(0x323a2Ace3038C503EccF3e6B612541F0a44fa022); // oLIT minter
     address public constant want =
-        address(0x9232a548DD9E81BaC65500b5e0d918F8Ba93675C); // Balancer 20WETH/80LIT
+        address(0xF3a605DA753e9dE545841de10EA8bFfBd1Da9C75); // Balancer 20WETH/80LIT
     address public constant oLIT =
-        address(0x627fee87d0D9D2c55098A06ac805Db8F98B158Aa); // oLIT
+        address(0x63390fB9257AaBF54fbB9aCCDE3b927Edd2fB4a2); // oLIT
 
     address public constant escrow =
-        address(0xf17d23136B4FeAd139f54fB766c8795faae09660); // veLIT
+        address(0xdcEBc9195fE9b8867fd017440ab9516406f475d6); // veLIT
     address public constant gaugeController =
-        address(0x901c8aA6A61f74aC95E7f397E22A0Ac7c1242218); // gauge controller
+        address(0xFe16CC67B62b10119BC03E7E7Bf2983f868f8CE5); // gauge controller
 
     address public owner;
     address public operator;

@@ -41,8 +41,8 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       forking: {
-        url: process.env.MAINNET_URL!,
-        blockNumber: 17513100,
+        url: process.env.GOERLI_URL!,
+        blockNumber: 9475426,
       },
     },
     goerli: {
