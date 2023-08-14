@@ -191,6 +191,9 @@ contract CdxStakingProxyV2 {
             "not allowed"
         );
 
+        //claim rewards
+        ICodexRewards(cdxStaking).getReward(false);
+
         uint256 bal = _token.balanceOf(address(this));
 
         if (bal > 0) {
